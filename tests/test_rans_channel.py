@@ -36,7 +36,7 @@ def test_log_law(profile):
     """Fit u⁺ = κ⁻¹ ln y⁺ + B on 50 <= y⁺ <= 150 (y/δ <= 0.15) at Re_τ = 1000.
 
     Tolerances are not tight because the model itself departs from a pure log law in
-    this window: van Driest damping still steepens the profile by a few % at y⁺ = 50,
+    this window: van Driest damping still steepens the profile by ~15 % at y⁺ = 50,
     and the total stress 1 - y/δ lowers it by up to ~8 % at y⁺ = 150 (local slope
     ∝ √(1 - y/δ) / (1 - e^{-y⁺/A⁺})). These bounds are an a-priori estimate, not yet checked
     against an implementation: revisit them once solve_channel exists.
